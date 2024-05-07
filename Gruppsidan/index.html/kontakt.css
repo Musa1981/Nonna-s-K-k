@@ -1,0 +1,257 @@
+:root{
+    --lightgreen:#606C38;
+    --darkgreen:#283618;
+    --beige:#FEFAE0;
+    --lightorange:#DDA15E;
+    --darkorange:#BC6C25;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.header
+{
+    width: 100%;
+    height: 40vh;
+    background: url(restaurang.jfif) 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.contact
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #BC6C25;
+    background-size: cover;
+}
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2
+{
+    font-size: 36px;
+    font-weight: 500;
+    color: #283618;
+}
+.contact .content p
+{
+    font-weight: 300;
+    color:#283618;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: #FEFAE0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 24px;
+}
+.container .contactInfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #FEFAE0;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3
+{
+    font-weight: 500;
+    color: #FEFAE0;
+}
+.contactForm
+{
+    width: 40%;
+    padding: 40px;
+    background: #FEFAE0;
+}
+.contactForm h2
+{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+    
+}
+.contactForm .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #DDA15E;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #BC6C25;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #fff;
+    color: #606C38;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    }
+    img 
+    {
+        width: 100%;
+        position: relative;
+    }
+@media (max-width:991px)
+{
+.contact
+{
+    padding: 50px;
+}
+.container
+{
+    flex-direction: column;
+}
+.container .contactInfo
+{
+    margin-bottom: 40px;
+    
+}
+.container .contactInfo,
+.contactForm
+{
+    width: 100%;
+}
+}
+
+.om-button,.kontakt-button,.start-button,.meny-button{/*stil för knappar */
+    background-color:#606C38;/*Backgrundsfärg*/
+     color: #FEFAE0;/*Textfärg för knapparna*/
+      padding: 10px 22px; 
+      text-align: center;/*Centerara texten*/
+      font-weight: bold; /*Fetstil för texten*/
+      font-size: 20px;/*Fontstorlek för texten*/
+      border: none;/*ta bort knappens ram*/
+      border-radius: 5px;/*Runda hörnen */
+      cursor: pointer; /*Ändra muspekanern  till en hand när musen svävar över knapparna*/   
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)/*Skugga*/
+    }
+
+    .om-button:hover,.kontakt-button:hover,.start-button:hover,.meny-button:hover,.boka-button:hover{/* Stillar för knapparna när musen svävar över*/
+      opacity: 0.7;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30)/*Ändra skuggstilen*/
+      
+      }
+
+      
+.hamburger-menu {
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color:#FEFAE0;;
+    margin: 5px 0;
+}
+
+.menu-items {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-items li {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+}
+@media screen and (max-width: 768px){ 
+    .om-button,.kontakt-button,.start-button,.meny-button{ 
+        display: none;
+         }
+
+
+}
+
+
+

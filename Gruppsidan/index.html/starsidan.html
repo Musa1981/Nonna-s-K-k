@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="startsida.css">
+    <!-- <link rel="stylesheet" href="button.html"> -->
+    <title>Startsidan</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=Sacramento&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Sacramento&family=Tangerine:wght@700&display=swap);
+      </style>
+</head>
+<body><!-- Header-sektionen -->
+    <header>
+         <!-- Navigationsknappar -->
+     <a href="starsidan.html"><button class= start-button>Startsida</button></a>
+     <a href= "meny.html"><button class = meny-button>Meny</button></a>
+     <a href ="omoss.html"><button class = om-button>Om oss</button></a>
+     <a href="kontakt.html"><button class = kontakt-button>Kontakt</button></a>
+<!--Rubrik-->
+
+<div class="hamburger-menu">
+    <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <ul class="menu-items" id="menu-items">
+    
+        <li><a href="starsidan.html">Startsida</a></li>
+        <li><a href="meny.html">Meny</a></li>
+        <li><a href="omoss.html">Om oss</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</div>
+        <h1>VÄLKOMMEN till Nonna´s kök</h1>
+    </header>
+<section class="section-class">
+
+      <div class= "container"><!--Innehålls sektioner-->
+        <div class="text"> Nonna`s </div> 
+        <!--Knapp för "boka här"-->
+        <a href="kontakt.html#section1"><button class="boka-button">~Boka här~</button></a>
+      </div>
+
+      <!-- <div class="hamburger-menu">
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu-items" id="menu-items">
+        
+            <li><a href="starsidan.html">Startsida</a></li>
+            <li><a href="meny.html">Meny</a></li>
+            <li><a href="omoss.html">Om oss</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div> -->
+</section>
+      <!--Footer sektionen-->
+     <footer class="footer-section">
+        <!-- information-->
+        <div class="kontakt-info"> Telefon: +08-99-99-00 | Address: Grev Turegatan 6 11438,Stockholm | Öppettider: Mån-Sön: 10:00 - 22:00 </div>
+       
+    </footer>
+
+    <script>
+    const menuToggle = document.getElementById("menu-toggle");
+const menuItems = document.getElementById("menu-items");
+
+menuToggle.addEventListener("click", () => {
+    menuItems.style.display = menuItems.style.display === "block" ? "none" : "block";
+});</script>
+</body>
+</html>

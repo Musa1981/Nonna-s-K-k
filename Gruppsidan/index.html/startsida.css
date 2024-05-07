@@ -1,0 +1,184 @@
+:root {
+    --lightgreen: #606c38;
+    --darkgreen: #283618;
+    --beige: #fefae0;
+    --lightorange: #dda15e;
+    --darkorange: #bc6c25;
+  }
+
+body { /*Inställningar för webbsidans bakgrundsbild, storlek och upprepning.*/
+    /* background-image:url("main.png"); */
+    background-size: cover; 
+    background-repeat:no-repeat;
+}
+html,body{/*Sätter höjden för både HTML och body till 100% av visningens höjd för att säkerställa att de täcker hela sidan.*/
+    height: 100%;
+    margin:0;
+    font-family: "montserrat";
+    background-color: #283618;
+}
+
+
+header{/*Styling för sidans header,understrykning av texten, färg och centrerad text.*/
+/* text-decoration: underline; */
+color: #FEFAE0;
+text-align: center;
+height: 5vh;
+display: fixed;
+top:0;
+background-color: var(--darkgreen);
+}
+
+h1{
+    margin-top: 5%;
+}
+
+.section-class{
+    height: 90vh;
+    background-image:url("main.png");
+}   
+
+.container{/*Styling för att placera element i container i mitten av sidan*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text {/*Styling för texten, inklusive färg och storlek*/
+    color: #FEFAE0;
+    font-size: 65px;
+     }
+.boka-button {/*Styling för knappen med klassen "boka-knapp" färg, storlek, padding, bakgrundsfärg, typsnitt, och övergångseffekt.*/
+    margin-top: 10px; 
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color:#606C38; 
+    color:#FEFAE0;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase; 
+    transition: background-color 0.3s
+}/*style för hamburgermeny*/
+.hamburger-menu {
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    z-index: 1;
+}
+
+.menu-toggle {
+    cursor: pointer;/*ändra muspekaren till en hand*/
+}
+
+.bar {/*Streck som represnterar hambergarmenyen*/
+    width: 25px;
+    height: 3px;
+    background-color: #faf4f4;
+    margin: 5px 0;
+}
+
+.menu-items {/*style */
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 20px;
+    right: -80px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.menu-items li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+
+/*Styling för kontaktinformationen i footern, understrykning, färg, positionering i botten och annat.*/
+/* .kontakt-info{
+    text-decoration: underline;
+    color: #FEFAE0;
+    bottom: 0;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+ }  */
+
+ .footer-section{
+    background-color: var(--darkgreen);
+    color: var(--beige);
+    height: 5vh;
+    display: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+ }
+
+ .kontakt-info{
+    padding-top:1%;
+    
+ }
+
+
+.om-button,.kontakt-button,.start-button,.meny-button{/*stil för knappar */
+    background-color:#606C38;/*Backgrundsfärg*/
+     color: #FEFAE0;/*Textfärg för knapparna*/
+      padding: 10px 22px; 
+      text-align: center;/*Centerara texten*/
+      font-weight: bold; /*Fetstil för texten*/
+      font-size: 20px;/*Fontstorlek för texten*/
+      border: none;/*ta bort knappens ram*/
+      border-radius: 5px;/*Runda hörnen */
+      cursor: pointer; /*Ändra muspekanern  till en hand när musen svävar över knapparna*/   
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)/*Skugga*/
+    }
+
+    .om-button:hover,.kontakt-button:hover,.start-button:hover,.meny-button:hover,.boka-button:hover{/* Stillar för knapparna när musen svävar över*/
+      opacity: 0.7;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30)/*Ändra skuggstilen*/
+      
+      }
+
+    @media screen and (max-width: 768px) {
+        .hamburger-menu {
+            display: flex;
+        }
+        .header {
+            text-align: center;
+          }
+        
+          h1 {
+            font-size: 24px;
+          }
+        
+          .menu-toggle {
+            display: block;
+          }
+        
+          .menu-items {
+            display: none;
+          }
+        
+    }
+    @media screen and (max-width: 768px){ 
+        .om-button,.kontakt-button,.start-button,.meny-button{ 
+            display: none;
+             }
+
+
+    }
+    @media screen and (min-width: 768px){
+        .hamburger-menu{
+            display:none;
+        }
+        
+    
+      }

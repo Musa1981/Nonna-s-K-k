@@ -1,0 +1,411 @@
+/* JOHANNAS DEL - MENY START */
+
+:root {
+  --lightgreen: #606c38;
+  --darkgreen: #283618;
+  --beige: #fefae0;
+  --lightorange: #dda15e;
+  --darkorange: #bc6c25;
+}
+/*för att använda färgerna skriver du tex color: var(--lightgreen);*/
+
+body,
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "montserrat", cursive;
+  scroll-behavior: smooth;
+  background-color: var(--lightorange);
+  /* filter: grayscale(10%); */
+}
+
+h2 {
+  margin: 0;
+  font-size: 1em;
+}
+
+h3 {
+  margin: 30px 0 15px 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  font-size: 0.6em;
+}
+
+.meny-section {
+  background-image: url("https://images.pexels.com/photos/4819658/pexels-photo-4819658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  /* background-size:cover;  
+    background-repeat: no-repeat; */
+  filter: grayscale(10%);
+}
+
+.menu-top-links {
+  background-color: var(--beige);
+  position: absolute;
+  top: 75%;
+  min-width: 58%;
+  left: 50%;
+  padding: 0.5%;
+  border-radius: 5px 0 0 5px;
+  opacity: 0.8;
+  filter: grayscale(90%);
+}
+
+a {
+  text-decoration: none;
+  font-size: 2.7em;
+  font-weight: 500;
+  font-family: "montserrat";
+  color: black;
+  font-family: "lovers quarrel";
+  letter-spacing: 1.1px;
+}
+
+li {
+  list-style: none;
+  padding: 0.5%;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.dots {
+  font-weight: 200;
+  color: black;
+  margin: 0 1px;
+}
+
+.dots-break {
+  display: none;
+  margin: 25% 25%;
+}
+
+#food-section-id {
+  background-color: var(--beige);
+  background-size: cover;
+  padding: 5%;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5% 15% 5% 15%;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 32px 70px 4px;
+}
+
+.food-section-inner {
+  background-color: var(--beige);
+  border-radius: 7px 7px 7px 7px;
+  border-style: double;
+  padding: 10% 0 10% 0;
+  /* text-align: center; */
+}
+
+.food-menu-wrapper {
+  margin: 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-column-gap: 0.10%; */
+  grid-row-gap: 0;
+}
+
+.piatti-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-menu-wrapper-tillbehör {
+  margin: 3%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.dish-one,
+.dish-two,
+.dish-three,
+.dish-four {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  /* text-align: center; */
+}
+
+.primi,
+.secondori {
+  font-family: "lovers quarrel", cursive;
+  font-size: 3em;
+  font-weight: 200;
+}
+
+.meny-food-kindof {
+  font-weight: 500;
+}
+
+.meny-food-dishes {
+  font-weight: 600;
+}
+
+.dish-one,
+.dish-four,
+.dish-two {
+  border-right: 0.7px solid;
+}
+
+/* .meny-food-ingrediens{
+  height: 70%; 
+   padding-right: 3%; 
+} */
+
+.meny-food-price {
+  text-align: right;
+  font-style: italic;
+}
+
+.dish-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* text-align: center; */
+}
+
+#wine-section-id {
+  height: 100vh;
+  background-color: var(--beige);
+  background-size: cover;
+  padding: 5%;
+  margin: 5% 15% 5% 15%;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 32px 70px 4px;
+}
+
+.wine-section-inner {
+  background-color: var(--beige);
+  border-radius: 7px 7px 7px 7px;
+  border-style: double;
+  padding: 10% 0 10% 0;
+}
+
+.wine {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 1%;
+  width: 100%;
+}
+
+.meny-wine-price {
+  text-align: end;
+  justify-content: end;
+  width: 15%;
+}
+
+.meny-wine-year {
+  width: 9%;
+}
+
+.meny-wine-producent {
+  font-weight: 700;
+  font-style: italic;
+  width: 30%;
+  justify-content: center;
+}
+
+.meny-wine-råvara-land {
+  width: 35%;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  width: 40%;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 32px 70px 4px;
+  border-radius: 3% 3% 3% 3%;
+  filter: grayscale(20%);
+}
+
+.popup-box {
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+
+img {
+  height: 270px;
+  width: 70%;
+  filter: grayscale(20%);
+}
+
+button {
+  padding: 5px 10px;
+  background-color: var(--lightorange);
+  color: var(--beige);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--lightgreen);
+}
+
+input {
+  margin: 4%;
+  border-style: none;
+  padding: 1%;
+  border: 1px solid var(--darkorange);
+  border-radius: 4px;
+}
+
+#thank-you-message {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  height: 20vh;
+  z-index: 1;
+  font-size: 1.6em;
+  background-color: var(--darkgreen);
+  color: #fefae0;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*tablet*/
+@media (min-width: 669px) and (max-width: 900px) {
+  p {
+    font-size: 0.7em;
+  }
+  .food-menu-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dish-one,
+  .dish-three {
+    border-right: 0.7px solid;
+  }
+
+  .dish-two,
+  .dish-four {
+    border-right: none;
+  }
+
+  .meny-wine-price {
+    width: 12%;
+  }
+
+  .meny-wine-råvara-land {
+    width: 20%;
+  }
+
+  .meny-wine-year {
+    width: 9%;
+  }
+
+  .meny-wine-producent {
+    width: 30%;
+  }
+
+  .menu-top-links {
+    min-width: 49%;
+    left: 50%;
+  }
+
+  .popup {
+    top: 30%;
+    left: 10%;
+    width: 80%;
+  }
+
+  img {
+    width: 60%;
+  }
+}
+
+/*mobile*/
+@media (max-width: 668px) {
+  .dots-break {
+    display: block;
+    margin: 0 20% 0 20%;
+  }
+
+  p {
+    font-size: 0.7em;
+  }
+
+  #food-section-id {
+    padding: 2%;
+    margin: 0 0 25% 0;
+  }
+
+  #wine-section-id {
+    margin: 0;
+    padding: 2%;
+  }
+
+  .meny-wine-price {
+    width: 12%;
+  }
+
+  .meny-wine-råvara-land {
+    width: 28%;
+  }
+
+  .meny-wine-year {
+    width: 8%;
+  }
+
+  .meny-wine-producent {
+    width: 46%;
+  }
+
+  .food-menu-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .dish-one,
+  .dish-two,
+  .dish-three,
+  .dish-four {
+    border-left: none;
+    border-right: none;
+  }
+
+  .menu-top-links {
+    min-width: 49%;
+    left: 50%;
+  }
+
+  .popup {
+    top: 25%;
+    left: 10%;
+    width: 80%;
+  }
+
+  img {
+    height: 200px;
+    width: 80%;
+    filter: grayscale(20%);
+  }
+}
+
+/* JOHANNAS DEL - MENY SLUT */

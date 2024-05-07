@@ -1,0 +1,9 @@
+:root{
+    --lightgreen:#606C38;
+    --darkgreen:#283618;
+    --beige:#FEFAE0;
+    --lightorange:#DDA15E;
+    --darkorange:#BC6C25;
+}
+/*för att använda färgerna skriver du tex color: var(--lightgreen);*/
+/* testar att införa en kommentar */

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Historia</title>
+    <script
+      src="https://kit.fontawesome.com/97b8883edb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style-om-oss.css" />
+    <link rel="stylesheet" href="button.html">
+  </head>
+  <!--Slut på head-->
+  <body>
+    <a href="starsidan.html"><button class= start-button>Startsida</button></a>
+    <a href= "meny.html"><button class = meny-button>Meny</button></a>
+    <a href ="omoss.html"><button class = om-button>Om oss</button></a>
+    <a href="kontakt.html"><button class = kontakt-button>Kontakt</button></a>
+    <div class="hamburger-menu">
+      <div class="menu-toggle" id="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+      <ul class="menu-items" id="menu-items">
+          <!-- Add your menu items here -->
+          <li><a href="starsidan.html">Startsida</a></li>
+          <li><a href="meny.html">Meny</a></li>
+          <li><a href="omoss.html">Om oss</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+  </div>
+   
+   
+    <div class="grid-container">
+      <div class="grid-header">
+        <h1><em>HISTORIA</em></h1>
+        <section class="historia-meny-section">
+          <h2>Lite mer om oss</h2>
+          <div class="top-meny-links">
+            <a href="#om-oss-section-id">OM OSS</a>
+            <a href="#puglia-section-id">PUGLIA</a>
+            <a href="#olivolja-section-id">OLIVOLJA</a>
+          </div>
+        </section>
+      </div>
+      <!--Slut på div class="grid.header"-->
+
+      <div class="flexbox-container">
+        <div class="grid-left">
+          <section id="om-oss-section-id">
+            <h2>MARIA BELLAGAMBA</h2>
+            <div class="maria-rossi">
+              <img src="nonna1.jpg" id="nonna1" alt="nonna1" />
+              <p class="bild-text">
+                Välkommen till Maria Bellagambas autentiska italienska
+                restaurang i hjärtat av Stockholm! Vi är stolta över att erbjuda
+                dig en smakresa till Italien med en historia som sträcker sig
+                tillbaka i generationer. Familjen Bellagamba, med rötterna i det
+                soliga Puglia, har odlat spannmål och oliver i över 150 år.
+                Denna långa tradition av jordbruk och passion för äkta
+                italienska råvaror har inspirerat oss att skapa en kulinarisk
+                upplevelse som är lika genuin som den är läcker.
+              </p>
+            </div>
+          </section>
+        </div>
+        <!--Slut på div class="grid.left"-->
+
+        <section id="puglia-section-id">
+          <div class="grid-main">
+            <div class="puglia">
+              <h2>PUGLIA</h2>
+              <img
+                src="Puglia-Promozione-1500x920.jpg"
+                id="puglia"
+                alt="puglia"
+              />
+              <div>
+                <p>
+                  Puglia, Italien, erbjuder en enastående matkultur som präglas
+                  av enkelhet och smakrikedom. Här finner man färska råvaror som
+                  olivolja, tomater, färskt bröd och en mängd lokala ostar och
+                  skaldjur. Det är en region där matlagning är en konstform, och
+                  traditionella rätter som orecchiette-pasta och fiskstew ciceri
+                  e tria är en del av vardagen.
+                </p>
+              </div>
+
+              <div class="wheelchair">
+                <p>______________________________</p>
+                <h2>TILLGÄNGLIGHET</h2>
+                <p>
+                  <i class="fa-solid fa-wheelchair fa-2xl"></i>
+                  <i class="fa-solid fa-baby-carriage fa-2xl"></i>
+                </p>
+                <p>
+                  Vi är stolta över att vara tillgängliga för alla med
+                  rullstolar, barnvagnar, skötrum och rullstolsvänliga
+                  toaletter.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--SLUT PÅ PUGLIA SECTION-->
+
+        <section id="olivolja-section-id">
+          <div class="grid-right">
+            <h2>VÅR OLIVOLJA</h2>
+            <div class="vår-olivolja">
+              <img
+                src="olio-uliveti-puglia-9.jpg"
+                id="olio-uliveti-puglia-9"
+                alt="oliver"
+              />
+              <p class="bild-text">
+                I vår restaurang är familjen Bellagambas olivolja något alldeles
+                speciellt, med recept som hållit sig oförändrat i över 150 år.
+                Vi har moderniserat vår tillverkningsprocess och är nu
+                ekologiska och miljövänliga. Vi expanderar även till butiker
+                nära dig - spana in hyllorna sommaren 2024 för att uppleva vår
+                autentiska olivolja med anor från generationer.
+              </p>
+            </div>
+            <!--SLUT PÅ OLIVOLJA SECTION-->
+          </div>
+        </section>
+      </div>
+
+      <div class="grid-footer">footer</div>
+<<<<<<< HEAD
+    
+=======
+
+>>>>>>> 873ce8487351a716859aff9b1cab3a6e24d7561f
+      <!--Slut på div class="grid.footer"-->
+    </div>
+    <!--Slut på div class="grid.container"-->
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+  const menuItems = document.getElementById("menu-items");
+  
+  menuToggle.addEventListener("click", () => {
+      menuItems.style.display = menuItems.style.display === "block" ? "none" : "block";
+  });</script>
+  </body>
+</html>
